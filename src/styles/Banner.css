@@ -1,0 +1,28 @@
+.banner-container {
+    margin-bottom: 3rem;
+}
+.banner-container img {
+    width: 100%;
+    position: relative;
+    object-position: top;
+    top: 0;
+    z-index: -2;
+    object-fit: cover;
+    height: 94vh;
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+    .banner-container img {
+        height: 89vh;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
