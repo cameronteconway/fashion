@@ -4,7 +4,7 @@ import Social from './Social';
 import News from './News';
 import Footer from './Footer';
 
-import { carouselData } from './data/data';
+import { carouselData, newsArticles } from '../data/data';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/App.css';
@@ -15,7 +15,7 @@ const App = () => {
             <Header />
             <main id='content'>
                 <Banner />
-                <News />
+                <News data={newsArticles} />
                 <Social data={carouselData} />
             </main>
             <Footer />

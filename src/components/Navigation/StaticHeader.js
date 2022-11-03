@@ -14,7 +14,7 @@ const StaticHeader = ({ season }) => {
                     id='toggle'
                     className='nav-toggle'
                 />
-                <label className='nav-toggle-label' for='toggle'>
+                <label className='nav-toggle-label' htmlFor='toggle'>
                     <div className='hamburger'>
                         <span className='bar bar1'></span>
                         <span className='bar bar2'></span>
@@ -51,17 +51,17 @@ const StaticHeader = ({ season }) => {
                             <div className='user-extra user-extra-mobile'>
                                 <span>
                                     <a href='#'>
-                                        <i class='bi bi-person-circle'></i>
+                                        <i className='bi bi-person-circle'></i>
                                     </a>
                                 </span>
                                 <span>
                                     <a href='#'>
-                                        <i class='bi bi-geo-alt-fill'></i>
+                                        <i className='bi bi-geo-alt-fill'></i>
                                     </a>
                                 </span>
                                 <span>
                                     <a href='#'>
-                                        <i class='bi bi-bag-fill'></i>
+                                        <i className='bi bi-bag-fill'></i>
                                     </a>
                                 </span>
                             </div>
@@ -72,17 +72,17 @@ const StaticHeader = ({ season }) => {
                 <div className='user-extra user-extra-desktop'>
                     <span>
                         <a href='#'>
-                            <i class='bi bi-person-circle'></i>
+                            <i className='bi bi-person-circle'></i>
                         </a>
                     </span>
                     <span>
                         <a href='#'>
-                            <i class='bi bi-geo-alt-fill'></i>
+                            <i className='bi bi-geo-alt-fill'></i>
                         </a>
                     </span>
                     <span>
                         <a href='#'>
-                            <i class='bi bi-bag-fill'></i>
+                            <i className='bi bi-bag-fill'></i>
                         </a>
                     </span>
                 </div>

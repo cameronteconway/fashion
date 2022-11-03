@@ -7,7 +7,6 @@
     margin-bottom: 20px;
     display: block;
     font-family: 'DM Serif Display', serif;
-    /* font-family: 'Merriweather', serif; */
 }
 
 /* Carousel */
@@ -22,9 +21,6 @@
 }
 .social-container .carousel-wrapper .carousel .slide:hover img {
     opacity: 0.6;
-}
-.social-container .carousel-wrapper .carousel .slide img {
-    /* opacity: 0.5; */
 }
 
 .social-container .carousel-wrapper .carousel .slide .view {

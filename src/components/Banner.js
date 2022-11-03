@@ -5,7 +5,7 @@ import '../styles/Banner.css';
 const Banner = () => {
     return (
         <div className='banner-container'>
-            <img src='images/banner-woman.jpg' />
+            <img src='images/banner-woman.jpg' alt='Woman in coat posing' />
         </div>
     );
 };

@@ -1,44 +1,101 @@
+import React, { useEffect, useState } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/News.css';
 
-const News = () => {
+const News = ({ data }) => {
+    const [dataIndex, setDataIndex] = useState(0);
+    const [prevDisabled, setPrevDisabled] = useState(true);
+    const [nextDisabled, setNextDisabled] = useState(false);
+    const dataLength = data.length;
+
+    const clickPrev = e => {
+        setNextDisabled(false);
+        if (dataIndex !== 0) {
+            setPrevDisabled(false);
+            setDataIndex(dataIndex - 1);
+        }
+    };
+
+    const clickNext = e => {
+        setPrevDisabled(false);
+        if (dataIndex !== dataLength - 1) {
+            setNextDisabled(false);
+            setDataIndex(dataIndex + 1);
+        }
+    };
+
+    useEffect(() => {
+        if (dataIndex === 0) {
+            setPrevDisabled(true);
+        }
+        if (dataIndex === dataLength - 1) {
+            setNextDisabled(true);
+        }
+    }, [dataIndex]);
+
     return (
         <section>
             <div className='wrapper'>
                 <div className='news-container'>
                     <div className='news-item'>
-                        <img src='images/news-factory.jpg' alt='test' />
+                        <div className='image-container'>
+                            <span className='news-title news-title-mobile'>
+                                MODA <span>news</span>
+                            </span>
+                            <img src={data[dataIndex].img} alt='test' />
+                        </div>
                         <div className='news-content'>
-                            <span className='news-title'>
+                            <span className='news-title news-title-desktop'>
                                 MODA <span>news</span>
                             </span>
                             <div className='text-arrow'>
                                 <span className='article-title'>
-                                    S22 Paris Fashion Week
+                                    {data[dataIndex].title}
                                 </span>
-                                <p>
-                                    The Prada Spring/Summer 2023 women’s
-                                    collection by Miuccia Prada and Raf Simons
-                                    presents a sequence of realities -
-                                    reflections, refractions, observations. For
-                                    the women’s runway show, Prada invites the
-                                    viewpoint of film director Nicolas Winding
-                                    Refn to conceive an experience around the
-                                    collection.
-                                </p>
+                                <p>{data[dataIndex].desc}</p>
                                 <div className='controls'>
-                                    <button
-                                        aria-label='Prev Button'
-                                        className='slide-button prev-button'
-                                    >
-                                        <i class='bi bi-arrow-left'></i>
-                                    </button>
-                                    <button
-                                        aria-label='Next Button'
-                                        className='slide-button next-button'
-                                    >
-                                        <i class='bi bi-arrow-right'></i>
-                                    </button>
+                                    {prevDisabled ? (
+                                        <button
+                                            disabled
+                                            id='prev-button'
+                                            aria-label='Prev Button'
+                                            className='slide-button prev-button'
+                                            type='button'
+                                            onClick={clickPrev}
+                                        >
+                                            <i className='bi bi-arrow-left'></i>
+                                        </button>
+                                    ) : (
+                                        <button
+                                            id='prev-button'
+                                            aria-label='Prev Button'
+                                            className='slide-button prev-button'
+                                            onClick={clickPrev}
+                                        >
+                                            <i className='bi bi-arrow-left'></i>
+                                        </button>
+                                    )}
+
+                                    {nextDisabled ? (
+                                        <button
+                                            disabled
+                                            id='next-button'
+                                            aria-label='Next Button'
+                                            className='slide-button next-button'
+                                            onClick={clickNext}
+                                        >
+                                            <i className='bi bi-arrow-right'></i>
+                                        </button>
+                                    ) : (
+                                        <button
+                                            id='next-button'
+                                            aria-label='Next Button'
+                                            className='slide-button next-button'
+                                            onClick={clickNext}
+                                        >
+                                            <i className='bi bi-arrow-right'></i>
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         </div>

@@ -9,7 +9,7 @@
 
 .news-container .news-item {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 .news-container .news-item img {
     width: 100%;
@@ -23,23 +23,22 @@
 .news-container .news-item .news-content {
     position: relative;
 }
-.news-container .news-content .news-title {
+.news-container .news-title-mobile {
     color: black;
     font-size: 34px;
-    position: absolute;
-    top: 75px;
-    left: -80px;
-    transform: rotate(90deg);
 }
-.news-container .news-content .news-title span {
+.news-container .news-content .news-title-desktop {
+    display: none;
+}
+.news-container .news-title span {
     font-family: 'DM Serif Display', serif;
 }
 
 /* Text arrow */
 .news-container .news-content .text-arrow {
-    padding: 3rem 0rem 0rem 6rem;
+    padding: 3rem 0rem 0rem 0rem;
     bottom: 20px;
-    position: absolute;
+    position: relative;
 }
 .news-container .news-content .text-arrow .article-title {
     color: black;
@@ -49,26 +48,62 @@
     margin-bottom: 2.5px;
 }
 .news-container .news-content .text-arrow p {
-    /* border: 1px solid red; */
     text-align: justify;
+    font-size: 16px;
 }
 .news-container .text-arrow .controls {
-    /* border: 1px solid red; */
     width: fit-content;
     float: right;
 }
 .news-container .text-arrow .controls .slide-button {
     background-color: unset;
     border: none;
-    font-size: 22px;
+    font-size: 28px;
     position: relative;
+    cursor: pointer;
 }
 .news-container .text-arrow .controls .prev-button {
     /* left: 0px; */
 }
 .news-container .text-arrow .controls .next-button {
     /* left: 35px; */
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
-/* Article title */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+    .news-container .news-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .news-container .news-title-mobile {
+        display: none;
+    }
+    .news-container .news-content .news-title-desktop {
+        display: block;
+        color: black;
+        font-size: 34px;
+        position: absolute;
+        top: 75px;
+        left: -80px;
+        transform: rotate(90deg);
+    }
+    .news-container .news-content .text-arrow {
+        padding: 3rem 0rem 0rem 4rem;
+        bottom: 20px;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .news-container .news-content .text-arrow {
+        padding: 3rem 0rem 0rem 6rem;
+        bottom: 20px;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+}
