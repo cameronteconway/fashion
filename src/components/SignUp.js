@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 
 import '../styles/SignUp.css';
 
@@ -36,7 +36,7 @@ const SignUp = () => {
                         <form>
                             <div
                                 className={`form-container ${
-                                    isFocused ? 'focused' : null
+                                    isFocused ? 'focused' : '!focused'
                                 }`}
                             >
                                 <div className='form-input'>

@@ -28,7 +28,7 @@
 }
 #static-header .user-extra a:hover,
 #static-header .user-extra a:focus {
-    color: red;
+    color: var(--special);
 }
 #static-header .user-extra a .bi {
     font-size: 18px;

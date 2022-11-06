@@ -1,13 +1,10 @@
 :root {
     --platinum: #e2e1e1;
-    --background: #9fb8ad;
-    --lightgrey: #ced0ce;
-    --riflegreen: #4e6246;
-    --onyx: #3f403f;
     --dark-text: #272323;
-    --dark-blue: #88a2aa;
-    --black: #090909;
     --white: #fcfeff;
+    --grey: #737373;
+    --special: #f69b0f;
+    --black: #000000;
 }
 
 * {

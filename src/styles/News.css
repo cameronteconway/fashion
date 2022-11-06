@@ -2,7 +2,7 @@
     /* background-color: #1b1b1b; */
     /* color: var(--dark-text); */
     /* border: 1px solid red; */
-    color: black;
+    color: var(--black);
     padding: 0rem 0rem 0rem 0rem;
     position: relative;
 }
@@ -24,7 +24,7 @@
     position: relative;
 }
 .news-container .news-title-mobile {
-    color: black;
+    color: var(--black);
     font-size: 34px;
 }
 .news-container .news-content .news-title-desktop {
@@ -41,7 +41,7 @@
     position: relative;
 }
 .news-container .news-content .text-arrow .article-title {
-    color: black;
+    color: var(--black);
     font-family: 'DM Serif Display', serif;
     font-size: 18px;
     display: inline-block;
@@ -84,7 +84,7 @@
     }
     .news-container .news-content .news-title-desktop {
         display: block;
-        color: black;
+        color: var(--black);
         font-size: 34px;
         position: absolute;
         top: 75px;

@@ -12,3 +12,9 @@ export const getCurrentSeason = () => {
         return 'Winter';
     }
 };
+
+export const getYear = () => {
+    const dateNow = new Date();
+    let yearNow = dateNow.getFullYear();
+    return yearNow;
+};
