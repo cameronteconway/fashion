@@ -50,6 +50,7 @@
 .news-container .news-content .text-arrow p {
     text-align: justify;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 .news-container .text-arrow .controls {
     width: fit-content;
@@ -94,6 +95,11 @@
         padding: 3rem 0rem 0rem 4rem;
         bottom: 20px;
         position: absolute;
+    }
+    .news-container .news-content .text-arrow p {
+        text-align: justify;
+        font-size: 16px;
+        margin-bottom: 20px;
     }
 }
 

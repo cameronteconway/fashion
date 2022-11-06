@@ -1,1 +1,26 @@
+.footer-background {
+    background-color: black;
+    border-top: 1px solid var(--white);
+    padding: 3rem 0;
+}
+.footer-background .wrapper {
+    max-width: 1750px;
+    padding: 0 2rem;
+}
 
+.footer-background .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

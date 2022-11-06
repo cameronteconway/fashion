@@ -1,10 +1,11 @@
 import Header from './Navigation/Header';
 import Banner from './Banner';
-import Social from './Social';
 import News from './News';
+import Social from './Social';
+import SignUp from './SignUp';
 import Footer from './Footer';
 
-import { carouselData, newsArticles } from '../data/data';
+import { carouselData, newsArticles, footerContent } from '../data/data';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/App.css';
@@ -17,8 +18,9 @@ const App = () => {
                 <Banner />
                 <News data={newsArticles} />
                 <Social data={carouselData} />
+                <SignUp />
             </main>
-            <Footer />
+            <Footer data={footerContent} />
         </div>
     );
 };

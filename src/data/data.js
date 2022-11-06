@@ -58,8 +58,25 @@ export const newsArticles = [
         desc: 'Moda understands the challanges our planet faces, this is why we employ the best practices to achieve carbon neutrality.',
     },
     {
-        title: 'Mercedes x Moda',
+        title: 'Mercedes-Benz x Moda',
         img: 'images/news-car.jpg',
-        desc: 'Mercedes x Moda is a truly unique partnership that epitomizes luxury. This collection is inspired by the shared passion for perfect design and innovation.',
+        desc: 'Mercedes-Benz x Moda is a truly unique partnership that epitomizes luxury. This collection is inspired by the shared passion for perfect design and innovation.',
     },
+];
+
+const customerService = ['Contact', 'FAQ', 'Store Finder', 'Sustainability'];
+
+const about = ['Careers', 'Size Guide'];
+
+const delivery = [
+    'UK Shipping',
+    'Worldwide Shipping',
+    'Returns & Refunds',
+    'Track Order',
+];
+
+export const footerContent = [
+    { 'Customer Service': customerService },
+    { About: about },
+    { Delivery: delivery },
 ];
