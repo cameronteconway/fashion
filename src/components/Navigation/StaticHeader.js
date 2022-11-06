@@ -27,40 +27,40 @@ const StaticHeader = ({ season }) => {
                 <nav id='primary-nav' className='toggle'>
                     <ul className='top-level-content'>
                         <li>
-                            <a href='#'>Men</a>
+                            <a href='/#'>Men</a>
                         </li>
                         <li>
-                            <a href='#'>Women</a>
+                            <a href='/#'>Women</a>
                         </li>
                         <li>
-                            <a href='#'>Handbags</a>
+                            <a href='/#'>Handbags</a>
                         </li>
                         <li>
-                            <a href='#'>Beauty</a>
+                            <a href='/#'>Beauty</a>
                         </li>
                         <li>
-                            <a href='#'>What's New</a>
+                            <a href='/#'>What's New</a>
                         </li>
                         <li>
-                            <a href='#'>Gifts</a>
+                            <a href='/#'>Gifts</a>
                         </li>
                         <li>
-                            <a href='#'>{`${season} collection`}</a>
+                            <a href='/#'>{`${season} collection`}</a>
                         </li>
                         <li>
                             <div className='user-extra user-extra-mobile'>
                                 <span>
-                                    <a href='#'>
+                                    <a href='/#'>
                                         <i className='bi bi-person-circle'></i>
                                     </a>
                                 </span>
                                 <span>
-                                    <a href='#'>
+                                    <a href='/#'>
                                         <i className='bi bi-geo-alt-fill'></i>
                                     </a>
                                 </span>
                                 <span>
-                                    <a href='#'>
+                                    <a href='/#'>
                                         <i className='bi bi-bag-fill'></i>
                                     </a>
                                 </span>
@@ -71,17 +71,17 @@ const StaticHeader = ({ season }) => {
 
                 <div className='user-extra user-extra-desktop'>
                     <span>
-                        <a href='#'>
+                        <a href='/#'>
                             <i className='bi bi-person-circle'></i>
                         </a>
                     </span>
                     <span>
-                        <a href='#'>
+                        <a href='/#'>
                             <i className='bi bi-geo-alt-fill'></i>
                         </a>
                     </span>
                     <span>
-                        <a href='#'>
+                        <a href='/#'>
                             <i className='bi bi-bag-fill'></i>
                         </a>
                     </span>

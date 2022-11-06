@@ -2,7 +2,7 @@ import '../styles/FooterColumn.css';
 
 const FooterColumn = ({ columnData }) => {
     const renderColumn = Object.values(columnData)[0].map((item, index) => (
-        <a href='#' key={index}>
+        <a href='/#' key={index}>
             {item}
         </a>
     ));

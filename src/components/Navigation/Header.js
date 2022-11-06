@@ -1,6 +1,6 @@
 import React from 'react';
 import StaticHeader from './StaticHeader';
-import StickyHeader from './StickyHeader';
+// import StickyHeader from './StickyHeader';
 
 import { getCurrentSeason } from '../../commonUtils';
 

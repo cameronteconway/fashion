@@ -31,7 +31,7 @@ const News = ({ data }) => {
         if (dataIndex === dataLength - 1) {
             setNextDisabled(true);
         }
-    }, [dataIndex]);
+    }, [dataIndex, dataLength]);
 
     return (
         <section>
