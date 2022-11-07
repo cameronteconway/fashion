@@ -9,7 +9,7 @@ const Footer = ({ data }) => {
     ));
 
     return (
-        <div className='footer-background'>
+        <footer className='footer-background section-scroll'>
             <div className='wrapper'>
                 <div className='footer-container'>
                     {renderColumns}
@@ -54,7 +54,7 @@ const Footer = ({ data }) => {
                     {getYear()}
                 </div>
             </div>
-        </div>
+        </footer>
     );
 };
 

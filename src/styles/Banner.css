@@ -5,7 +5,7 @@
     z-index: -2;
     object-fit: cover;
     display: block;
-    height: 95vh;
+    height: calc(100vh - 50px);
     bottom: 0;
     position: absolute;
 }
