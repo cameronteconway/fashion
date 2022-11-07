@@ -8,7 +8,6 @@ const Social = ({ data }) => {
         return (
             <div key={index}>
                 <img src={item.src} alt={item.alt} />
-                <p className='view'>View</p>
             </div>
         );
     });

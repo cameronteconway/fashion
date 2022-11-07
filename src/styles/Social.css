@@ -13,15 +13,6 @@
 .social-container .carousel-wrapper-desktop {
     display: none;
 }
-.social-container .carousel-wrapper .carousel .slide:hover .view {
-    display: block;
-}
-.social-container .carousel-wrapper .carousel .slide:hover {
-    cursor: pointer;
-}
-.social-container .carousel-wrapper .carousel .slide:hover img {
-    opacity: 0.6;
-}
 
 .social-container .carousel-wrapper .carousel .slide .view {
     display: none;

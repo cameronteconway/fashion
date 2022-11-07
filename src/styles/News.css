@@ -1,7 +1,4 @@
 .news-container {
-    /* background-color: #1b1b1b; */
-    /* color: var(--dark-text); */
-    /* border: 1px solid red; */
     color: var(--black);
     padding: 0rem 0rem 0rem 0rem;
     position: relative;
@@ -62,6 +59,9 @@
     font-size: 28px;
     position: relative;
     cursor: pointer;
+}
+.news-container .text-arrow .controls .slide-button:enabled i {
+    color: var(--black);
 }
 .news-container .text-arrow .controls .prev-button {
     /* left: 0px; */
