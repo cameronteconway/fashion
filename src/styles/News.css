@@ -63,11 +63,7 @@
 .news-container .text-arrow .controls .slide-button:enabled i {
     color: var(--black);
 }
-.news-container .text-arrow .controls .prev-button {
-    /* left: 0px; */
-}
 .news-container .text-arrow .controls .next-button {
-    /* left: 35px; */
     margin-left: 10px;
 }
 

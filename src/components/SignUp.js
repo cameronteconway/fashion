@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 
 import '../styles/SignUp.css';
 
@@ -25,7 +25,7 @@ const SignUp = () => {
     };
 
     return (
-        <section class='signup-section'>
+        <section class='signup-section section-scroll'>
             <div className='signup-background'>
                 <div className='wrapper'>
                     <div className='signup-container'>

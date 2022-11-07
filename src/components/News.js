@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/News.css';
 
@@ -34,7 +34,7 @@ const News = ({ data }) => {
     }, [dataIndex, dataLength]);
 
     return (
-        <section>
+        <section className='section-scroll'>
             <div className='wrapper'>
                 <div className='news-container'>
                     <div className='news-item'>

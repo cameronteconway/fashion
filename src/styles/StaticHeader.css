@@ -1,7 +1,9 @@
 #static-header {
     border-bottom: 1px solid var(--platinum);
-    position: relative;
+    position: absolute;
+    width: 100%;
     background-color: var(--white);
+    z-index: 2;
 }
 #static-header a {
     text-decoration: none;
@@ -13,7 +15,6 @@
 #static-header .logo h1 {
     padding: 0.25rem 0;
     color: var(--dark-text);
-    /* color: var(--riflegreen); */
 }
 
 /* Extra user */
@@ -31,7 +32,7 @@
     color: var(--special);
 }
 #static-header .user-extra a .bi {
-    font-size: 18px;
+    font-size: 19px;
 }
 #static-header .user-extra-desktop {
     display: none;
@@ -160,12 +161,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-    /* #static-header {
-        background-image: url('../../public/images/banner-woman.jpg');
-        background-repeat: no-repeat;
-        background-position: 50% 70%;
-        background-size: 40%;
-    } */
     #static-header .header-wrapper {
         text-align: center;
     }
@@ -187,7 +182,7 @@
     #static-header .user-extra-mobile {
         display: none;
     }
-    /* nav */
+    /* Nav */
     #static-header nav {
         position: relative;
         display: block;
@@ -204,7 +199,7 @@
         margin-bottom: 1rem;
         opacity: 1;
     }
-    /* toggle */
+    /* Toggle */
     #static-header .nav-toggle {
         display: none;
     }

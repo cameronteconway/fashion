@@ -1,8 +1,10 @@
 .footer-background {
     background-color: var(--black);
     border-top: 1px solid var(--grey);
-    padding: 4rem 0;
+    padding: 4rem 0 3rem 0;
     font-family: 'Barlow', sans-serif;
+    scroll-snap-stop: always;
+    scroll-snap-align: end;
 }
 .footer-background .wrapper {
     max-width: 1750px;

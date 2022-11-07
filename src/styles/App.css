@@ -35,9 +35,22 @@ body {
     margin: auto;
     padding: 0 1rem;
 }
-
-section {
-    padding: 4rem 0;
+/* Scroll */
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+main.content {
+    height: 100vh;
+}
+.section-scroll {
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
 }
 
 @media only screen and (min-width: 600px) {

@@ -1,15 +1,13 @@
-.banner-container {
-    margin-bottom: 4rem;
-}
 .banner-container img {
     width: 100%;
     position: relative;
     object-position: top;
-    top: 0;
     z-index: -2;
     object-fit: cover;
-    height: 94vh;
     display: block;
+    height: 95vh;
+    bottom: 0;
+    position: absolute;
 }
 
 @media only screen and (min-width: 600px) {
