@@ -1,5 +1,5 @@
 import FooterColumn from './FooterColumn';
-import { getYear } from '../commonUtils';
+import { getYear } from '../utils/commonUtils';
 
 import '../styles/Footer.css';
 
@@ -9,7 +9,7 @@ const Footer = ({ data }) => {
     ));
 
     return (
-        <footer className='footer-background section-scroll'>
+        <footer className='footer-background'>
             <div className='wrapper'>
                 <div className='footer-container'>
                     {renderColumns}

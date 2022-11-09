@@ -2,7 +2,7 @@ import React from 'react';
 import StaticHeader from './StaticHeader';
 // import StickyHeader from './StickyHeader';
 
-import { getCurrentSeason } from '../../commonUtils';
+import { getCurrentSeason } from '../../utils/commonUtils';
 
 import '../../styles/Header.css';
 

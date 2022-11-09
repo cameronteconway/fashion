@@ -13,7 +13,7 @@ const Social = ({ data }) => {
     });
 
     return (
-        <section className='section-scroll'>
+        <section>
             <div className='wrapper'>
                 <div className='social-container'>
                     <span>@moda</span>

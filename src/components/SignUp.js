@@ -10,7 +10,7 @@ const SignUp = () => {
         setIsFocused(true);
     };
 
-    const handleInputBlur = e => {
+    const handleInputBlur = (e) => {
         let value = e.target.value;
         value.trim();
 
@@ -25,7 +25,7 @@ const SignUp = () => {
     };
 
     return (
-        <section class='signup-section section-scroll'>
+        <section className='signup-section'>
             <div className='signup-background'>
                 <div className='wrapper'>
                     <div className='signup-container'>
@@ -44,7 +44,7 @@ const SignUp = () => {
                                     <input
                                         id='signUp'
                                         onFocus={handleInputFocus}
-                                        onBlur={e => handleInputBlur(e)}
+                                        onBlur={(e) => handleInputBlur(e)}
                                         ref={inputElement}
                                     />
                                 </div>

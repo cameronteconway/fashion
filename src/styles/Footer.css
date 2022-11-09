@@ -1,15 +1,13 @@
 footer.footer-background {
     background-color: var(--black);
-    /* border-top: 1px solid var(--grey); */
-    /* padding: 4rem 0 3rem 0; */
+    border-top: 1px solid var(--grey);
+    padding: 4rem 0 7rem 0;
     font-family: 'Barlow', sans-serif;
-    /* scroll-snap-stop: always;
-    scroll-snap-align: end; */
     position: relative;
 }
 .footer-background .wrapper {
     max-width: 1750px;
-    padding: 0 2rem;
+    padding: 2rem;
     width: 100%;
 }
 

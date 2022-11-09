@@ -8,7 +8,7 @@ const News = ({ data }) => {
     const [nextDisabled, setNextDisabled] = useState(false);
     const dataLength = data.length;
 
-    const clickPrev = e => {
+    const clickPrev = () => {
         setNextDisabled(false);
         if (dataIndex !== 0) {
             setPrevDisabled(false);
@@ -16,7 +16,7 @@ const News = ({ data }) => {
         }
     };
 
-    const clickNext = e => {
+    const clickNext = () => {
         setPrevDisabled(false);
         if (dataIndex !== dataLength - 1) {
             setNextDisabled(false);
@@ -34,7 +34,7 @@ const News = ({ data }) => {
     }, [dataIndex, dataLength]);
 
     return (
-        <section className='section-scroll'>
+        <section>
             <div className='wrapper'>
                 <div className='news-container'>
                     <div className='news-item'>

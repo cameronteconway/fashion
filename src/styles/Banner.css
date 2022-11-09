@@ -1,6 +1,10 @@
+.banner-container {
+    position: relative;
+    height: 100vh;
+    margin-bottom: 4rem;
+}
 .banner-container img {
     width: 100%;
-    position: relative;
     object-position: top;
     z-index: -2;
     object-fit: cover;
@@ -9,6 +13,30 @@
     bottom: 0;
     position: absolute;
 }
+
+/* Scroll */
+/* html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+main.content {
+    height: 100vh;
+} */
+/* .banner-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+.section-scroll {
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    margin-bottom: 3rem;
+} */
 
 @media only screen and (min-width: 600px) {
 }
