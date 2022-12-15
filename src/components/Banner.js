@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <div className='banner-container'>
             <img
-                src={require('../assets/banner-woman.jpg')}
+                src={require('../assets/banner-woman-low-quality.jpg')}
                 alt='Woman in coat posing'
             />
         </div>
