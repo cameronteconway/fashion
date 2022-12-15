@@ -18,27 +18,27 @@ const getSeasonCollection = () => {
 export const carouselData = [
     {
         src: require('../assets/square-necklace-bw.jpg'),
-        alt: 'Shot of a womans neck with a golden necklace',
+        alt: 'Womans neck with a golden necklace',
     },
     {
         src: require('../assets/square-bag-bw.jpg'),
-        alt: 'Shot of a womans neck with a golden necklace',
+        alt: 'Womans mid-body wearing a crop top and a large handbag',
     },
     {
         src: require('../assets/square-pose-bw.jpg'),
-        alt: 'Shot of a womans neck with a golden necklace',
+        alt: 'Woman in a dress sat down posing to her right with her right arm stretched',
     },
     {
         src: require('../assets/square-men-bw.jpg'),
-        alt: 'Shot of a womans neck with a golden necklace',
+        alt: 'Two lads sitting on a bench and one lad crouching down posing infront of them',
     },
     {
         src: require('../assets/square-dress-bw.jpg'),
-        alt: 'Shot of a womans neck with a golden necklace',
+        alt: 'Woman with short hair facing to the her left',
     },
     {
         src: require('../assets/square-face-bw.jpg'),
-        alt: 'Shot of a womans neck with a golden necklace',
+        alt: 'Man wearing a bucket hat with low light',
     },
     {
         src: require('../assets/square-shoes-bw.jpg'),

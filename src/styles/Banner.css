@@ -14,30 +14,6 @@
     position: absolute;
 }
 
-/* Scroll */
-/* html {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
-main.content {
-    height: 100vh;
-} */
-/* .banner-container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    height: 100vh;
-}
-.section-scroll {
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-behavior: smooth;
-    margin-bottom: 3rem;
-} */
-
 @media only screen and (min-width: 600px) {
 }
 
