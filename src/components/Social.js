@@ -7,7 +7,7 @@ const Social = ({ data }) => {
     const renderCarouselData = data.map((item, index) => {
         return (
             <div key={index}>
-                <img src={item.src} alt={item.alt} />
+                <img className='carousel-image' src={item.src} alt={item.alt} />
             </div>
         );
     });
