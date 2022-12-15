@@ -49,7 +49,7 @@ export const carouselData = [
 export const newsArticles = [
     {
         title: getSeasonCollection(),
-        img: require('../assets/news-catwalk-low-quality.jpg'),
+        img: require('../assets/news-catwalk.jpg'),
         desc: `Our ${getSeasonCollection()} by Giana Bianchi and Emilia Esposito presents a sequence realities - reflections, refractions, observations.`,
     },
     {

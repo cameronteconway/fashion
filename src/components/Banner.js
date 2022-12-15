@@ -5,7 +5,7 @@ const Banner = () => {
         <div className='banner-container'>
             <img
                 rel='preload'
-                src={require('../assets/banner-woman-low-quality.jpg')}
+                src={require('../assets/banner-woman.jpg')}
                 alt='Woman in coat posing'
             />
         </div>
