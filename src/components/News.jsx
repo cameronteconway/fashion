@@ -1,4 +1,11 @@
 import { useEffect, useState } from 'react';
+
+import img1 from '../assets/news-catwalk.jpg';
+import img2 from '../assets/news-factory.jpg';
+import img3 from '../assets/news-car.jpg';
+
+const images = [img1, img2, img3];
+
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/News.css';
 
@@ -42,7 +49,10 @@ const News = ({ data }) => {
                             <span className='news-title news-title-mobile'>
                                 MODA <span>news</span>
                             </span>
-                            <img src={data[dataIndex].img} alt='test' />
+                            <img
+                                src={images[dataIndex]}
+                                alt={data[dataIndex].desc}
+                            />
                         </div>
                         <div className='news-content'>
                             <span className='news-title news-title-desktop'>

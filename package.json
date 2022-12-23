@@ -1,16 +1,17 @@
 {
     "name": "fashion",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "",
     "keywords": [],
     "author": "",
     "license": "ISC",
     "default": "index.html",
     "scripts": {
-        "dev": "parcel src/index.html",
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
         "format": "prettier --write \"src/**/*.{js,jsx}\"",
-        "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-        "build": "parcel build src/index.html"
+        "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
     },
     "dependencies": {
         "bootstrap-icons": "^1.9.1",
@@ -19,15 +20,16 @@
         "react-responsive-carousel": "^3.2.23"
     },
     "devDependencies": {
+        "@vitejs/plugin-react": "^2.1.0",
         "eslint": "^8.29.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-import": "^2.26.0",
         "eslint-plugin-jsx-a11y": "^6.6.1",
         "eslint-plugin-react": "^7.31.11",
         "eslint-plugin-react-hooks": "^4.6.0",
-        "parcel": "^2.8.0",
         "prettier": "^2.8.0",
-        "process": "^0.11.10"
+        "process": "^0.11.10",
+        "vite": "^3.1.4"
     },
     "browserslist": {
         "production": [

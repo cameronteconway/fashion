@@ -13,7 +13,7 @@
         "react/prop-types": 0,
         "react/react-in-jsx-scope": 0
     },
-    "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
+    "plugins": ["react", "import", "jsx-a11y"],
     "parserOptions": {
         "ecmaVersion": 2022,
         "sourceType": "module",
@@ -29,7 +29,12 @@
     "settings": {
         "react": {
             // Check in package.json
-            "version": "17.0.2"
+            "version": "detect"
+        }
+    },
+    "import/resolver": {
+        "node": {
+            "extensions": [".js", ".jsx"]
         }
     }
 }

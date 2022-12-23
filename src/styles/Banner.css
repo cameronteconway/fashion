@@ -3,23 +3,25 @@
     height: 100vh;
     margin-bottom: 4rem;
 }
-.banner-container img {
+.banner-container span {
     width: 100%;
-    object-position: top;
     z-index: -2;
-    object-fit: cover;
     display: block;
     height: calc(100vh - 50px);
     bottom: 0;
     position: absolute;
+    background: url(../assets/banner-woman.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media only screen and (min-width: 600px) {
 }
 
 @media only screen and (min-width: 768px) {
-    .banner-container img {
-        height: calc(100vh - 100px);
+    .banner-container span {
+        height: calc(100vh - 90px);
     }
 }
 

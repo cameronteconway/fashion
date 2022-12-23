@@ -17,31 +17,31 @@ const getSeasonCollection = () => {
 
 export const carouselData = [
     {
-        src: require('../assets/square-necklace-bw.jpg'),
+        src: 'square-necklace-bw.jpg',
         alt: 'Womans neck with a golden necklace',
     },
     {
-        src: require('../assets/square-bag-bw.jpg'),
+        src: 'square-bag-bw.jpg',
         alt: 'Womans mid-body wearing a crop top and a large handbag',
     },
     {
-        src: require('../assets/square-pose-bw.jpg'),
+        src: 'square-pose-bw.jpg',
         alt: 'Woman in a dress sat down posing to her right with her right arm stretched',
     },
     {
-        src: require('../assets/square-men-bw.jpg'),
+        src: 'square-men-bw.jpg',
         alt: 'Two lads sitting on a bench and one lad crouching down posing infront of them',
     },
     {
-        src: require('../assets/square-dress-bw.jpg'),
+        src: 'square-dress-bw.jpg',
         alt: 'Woman with short hair facing to the her left',
     },
     {
-        src: require('../assets/square-face-bw.jpg'),
+        src: 'square-face-bw.jpg',
         alt: 'Man wearing a bucket hat with low light',
     },
     {
-        src: require('../assets/square-shoes-bw.jpg'),
+        src: 'square-shoes-bw.jpg',
         alt: 'Legs with colourful tights and shoes',
     },
 ];
@@ -49,17 +49,17 @@ export const carouselData = [
 export const newsArticles = [
     {
         title: getSeasonCollection(),
-        img: require('../assets/news-catwalk.jpg'),
+        img: 'news-catwalk.jpg',
         desc: `Our ${getSeasonCollection()} by Giana Bianchi and Emilia Esposito presents a sequence realities - reflections, refractions, observations.`,
     },
     {
         title: 'Sustainable Fashion',
-        img: require('../assets/news-factory.jpg'),
+        img: 'news-factory.jpg',
         desc: 'Moda understands the challanges our planet faces, this is why we employ the best practices to achieve carbon neutrality.',
     },
     {
         title: 'Mercedes-Benz x Moda',
-        img: require('../assets/news-car.jpg'),
+        img: 'news-car.jpg',
         desc: 'A truly unique partnership that epitomizes luxury. This collection is inspired by the shared passion for perfect design and innovation.',
     },
 ];

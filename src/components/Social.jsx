@@ -1,13 +1,27 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
+import img1 from '../assets/square-necklace-bw.jpg';
+import img2 from '../assets/square-bag-bw.jpg';
+import img3 from '../assets/square-pose-bw.jpg';
+import img4 from '../assets/square-men-bw.jpg';
+import img5 from '../assets/square-dress-bw.jpg';
+import img6 from '../assets/square-face-bw.jpg';
+import img7 from '../assets/square-shoes-bw.jpg';
+
+const images = [img1, img2, img3, img4, img5, img6, img7];
+
 import '../styles/Social.css';
 
 const Social = ({ data }) => {
     const renderCarouselData = data.map((item, index) => {
         return (
             <div key={index}>
-                <img className='carousel-image' src={item.src} alt={item.alt} />
+                <img
+                    className={'carousel-image'}
+                    src={images[index]}
+                    alt={item.alt}
+                />
             </div>
         );
     });
