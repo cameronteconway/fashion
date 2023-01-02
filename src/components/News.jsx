@@ -1,116 +1,32 @@
 import { useEffect, useState } from 'react';
 
-import img1 from '../assets/news-catwalk.jpg';
-import img2 from '../assets/news-factory.jpg';
+import img1 from '../assets/news-factory.jpg';
+import img2 from '../assets/news-catwalk.jpg';
 import img3 from '../assets/news-car.jpg';
 
-const images = [img1, img2, img3];
+const images = [img1, img2];
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/News.css';
 
 const News = ({ data }) => {
-    const [dataIndex, setDataIndex] = useState(0);
-    const [prevDisabled, setPrevDisabled] = useState(true);
-    const [nextDisabled, setNextDisabled] = useState(false);
-    const dataLength = data.length;
-
-    const clickPrev = () => {
-        setNextDisabled(false);
-        if (dataIndex !== 0) {
-            setPrevDisabled(false);
-            setDataIndex(dataIndex - 1);
-        }
-    };
-
-    const clickNext = () => {
-        setPrevDisabled(false);
-        if (dataIndex !== dataLength - 1) {
-            setNextDisabled(false);
-            setDataIndex(dataIndex + 1);
-        }
-    };
-
-    useEffect(() => {
-        if (dataIndex === 0) {
-            setPrevDisabled(true);
-        }
-        if (dataIndex === dataLength - 1) {
-            setNextDisabled(true);
-        }
-    }, [dataIndex, dataLength]);
+    const renderNews = data.map((articles, index) => (
+        <div className='article-container'>
+            <img src={images[index]} />
+            <div>
+                <spam className='title'>{articles.title}</spam>
+                <p className='desc'>{articles.desc}</p>
+                <a className='link' href='/'>
+                    Read more
+                </a>
+            </div>
+        </div>
+    ));
 
     return (
         <section>
             <div className='wrapper'>
-                <div className='news-container'>
-                    <div className='news-item'>
-                        <div className='image-container'>
-                            <span className='news-title news-title-mobile'>
-                                MODA <span>news</span>
-                            </span>
-                            <img
-                                src={images[dataIndex]}
-                                alt={data[dataIndex].desc}
-                            />
-                        </div>
-                        <div className='news-content'>
-                            <span className='news-title news-title-desktop'>
-                                MODA <span>news</span>
-                            </span>
-                            <div className='text-arrow'>
-                                <span className='article-title'>
-                                    {data[dataIndex].title}
-                                </span>
-                                <p>{data[dataIndex].desc}</p>
-                                <div className='controls'>
-                                    {prevDisabled ? (
-                                        <button
-                                            disabled
-                                            id='prev-button'
-                                            aria-label='Prev Button'
-                                            className='slide-button prev-button'
-                                            type='button'
-                                            onClick={clickPrev}
-                                        >
-                                            <i className='bi bi-arrow-left'></i>
-                                        </button>
-                                    ) : (
-                                        <button
-                                            id='prev-button'
-                                            aria-label='Prev Button'
-                                            className='slide-button prev-button'
-                                            onClick={clickPrev}
-                                        >
-                                            <i className='bi bi-arrow-left'></i>
-                                        </button>
-                                    )}
-
-                                    {nextDisabled ? (
-                                        <button
-                                            disabled
-                                            id='next-button'
-                                            aria-label='Next Button'
-                                            className='slide-button next-button'
-                                            onClick={clickNext}
-                                        >
-                                            <i className='bi bi-arrow-right'></i>
-                                        </button>
-                                    ) : (
-                                        <button
-                                            id='next-button'
-                                            aria-label='Next Button'
-                                            className='slide-button next-button'
-                                            onClick={clickNext}
-                                        >
-                                            <i className='bi bi-arrow-right'></i>
-                                        </button>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div className='news-container-v1'>{renderNews}</div>
             </div>
         </section>
     );

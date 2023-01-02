@@ -11,7 +11,7 @@ const getSeasonCollection = () => {
     } else if (currentSeason === 'Autumn') {
         return `${currentYear} Winter collection`;
     } else {
-        return `${currentYear} Sprint collection`;
+        return `${currentYear} Spring collection`;
     }
 };
 
@@ -48,20 +48,20 @@ export const carouselData = [
 
 export const newsArticles = [
     {
-        title: getSeasonCollection(),
-        img: 'news-catwalk.jpg',
-        desc: `Our ${getSeasonCollection()} by Giana Bianchi and Emilia Esposito presents a sequence realities - reflections, refractions, observations.`,
-    },
-    {
         title: 'Sustainable Fashion',
         img: 'news-factory.jpg',
         desc: 'Moda understands the challanges our planet faces, this is why we employ the best practices to achieve carbon neutrality.',
     },
     {
-        title: 'Mercedes-Benz x Moda',
-        img: 'news-car.jpg',
-        desc: 'A truly unique partnership that epitomizes luxury. This collection is inspired by the shared passion for perfect design and innovation.',
+        title: getSeasonCollection(),
+        img: 'news-catwalk.jpg',
+        desc: `Our ${getSeasonCollection()} by Giana Bianchi and Emilia Esposito presents a sequence realities - reflections, refractions, observations.`,
     },
+    // {
+    //     title: 'Mercedes-Benz x Moda',
+    //     img: 'news-car.jpg',
+    //     desc: 'A truly unique partnership that epitomizes luxury. This collection is inspired by the shared passion for perfect design and innovation.',
+    // },
 ];
 
 const customerService = ['Contact', 'FAQ', 'Store Finder', 'Sustainability'];

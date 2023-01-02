@@ -14,6 +14,8 @@
 }
 #static-header .logo h1 {
     padding: 0.25rem 0;
+    /* color: var(--special); */
+    letter-spacing: 3px;
     color: var(--dark-text);
 }
 
