@@ -1,0 +1,55 @@
+// [block]__[element]--[modifier]
+
+.social-container {
+    text-align: center;
+    &__title {
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        display: block;
+        font-family: 'DM Serif Display', serif;
+    }
+    &__carousel-wrapper {
+        &--desktop {
+            display: none;
+        }
+    }
+    &__carousel-image {
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+/* Carousel Component Specific Styles */
+.social-container__carousel-wrapper .carousel .slide .view {
+    display: none;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 28px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--black);
+    font-family: 'DM Serif Display', serif;
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+    .social-container__carousel-wrapper {
+        &--desktop {
+            display: block;
+        }
+        &--mobile {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

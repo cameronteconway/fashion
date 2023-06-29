@@ -1,43 +1,56 @@
 import FooterColumn from './FooterColumn';
 import { getYear } from '../utils/commonUtils';
 
-import '../styles/Footer.css';
+import '../styles/Footer.scss';
 
-const Footer = ({ data }) => {
-    const renderColumns = data.map((column, index) => (
-        <FooterColumn columnData={column} key={index} />
-    ));
+interface FooterContent {
+    name: string;
+    content: string[];
+}
+
+interface Props {
+    data: FooterContent[];
+}
+
+const Footer = ({ data }: Props) => {
+    const renderColumns: JSX.Element[] = data.map(
+        (column: FooterContent, index: number) => (
+            <FooterColumn columnData={column} key={index} />
+        )
+    );
 
     return (
         <footer className='footer-background'>
             <div className='wrapper'>
-                <div className='footer-container'>
+                <div className='footer'>
                     {renderColumns}
-                    <div className='final-column'>
-                        <span>Location: GB (£)</span>
-                        <div className='social-links'>
-                            <a href='/#'>
+                    <div className='footer__final-column'>
+                        <span className='footer__location'>
+                            Location: GB (£)
+                        </span>
+                        <div className='footer__social-links'>
+                            <a className='footer__social-link' href='/#'>
                                 <i className='bi bi-instagram'></i>
                             </a>
-                            <a href='/#'>
+                            <a className='footer__social-link' href='/#'>
                                 <i className='bi bi-linkedin'></i>
                             </a>
-                            <a href='/#'>
+                            <a className='footer__social-link' href='/#'>
                                 <i className='bi bi-snapchat'></i>
                             </a>
-                            <a href='/#'>
+                            <a className='footer__social-link' href='/#'>
                                 <i className='bi bi-twitter'></i>
                             </a>
-                            <a href='/#'>
+                            <a className='footer__social-link' href='/#'>
                                 <i className='bi bi-wechat'></i>
                             </a>
-                            <a href='/#'>
+                            <a className='footer__social-link' href='/#'>
                                 <i className='bi bi-youtube'></i>
                             </a>
-                            <a href='/#'>
+                            <a className='footer__social-link' href='/#'>
                                 <i className='bi bi-telegram'></i>
                             </a>
-                            <a href='/#'>
+                            <a className='footer__social-link' href='/#'>
                                 <i className='bi bi-twitch'></i>
                             </a>
                         </div>
@@ -46,6 +59,7 @@ const Footer = ({ data }) => {
                 <div className='copyright'>
                     ©{' '}
                     <a
+                        className='copyright__link'
                         href='https://cameronconway.co.uk'
                         title="Go to Cameron Conway's portfolio website"
                     >

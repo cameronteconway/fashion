@@ -1,6 +1,6 @@
 export const getCurrentSeason = () => {
-    const dateNow = new Date();
-    const monthNow = dateNow.getMonth();
+    const dateNow: Date = new Date();
+    const monthNow: number = dateNow.getMonth();
 
     if (monthNow === 2 || monthNow === 3 || monthNow === 4) {
         return 'Spring';
@@ -14,7 +14,7 @@ export const getCurrentSeason = () => {
 };
 
 export const getYear = () => {
-    const dateNow = new Date();
-    let yearNow = dateNow.getFullYear();
+    const dateNow: Date = new Date();
+    const yearNow: number = dateNow.getFullYear();
     return yearNow;
 };

@@ -1,0 +1,38 @@
+// [block]__[element]--[modifier]
+
+.news-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+    position: relative;
+}
+.article {
+    position: relative;
+    &__img {
+        width: 100%;
+        height: auto;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    &__title {
+        font-size: 20px;
+        font-family: 'DM Serif Display', serif;
+        position: absolute;
+        bottom: -22px;
+        left: 0px;
+        color: var(--black);
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: 768px) {
+    .news-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+    .article__title {
+        font-size: 22px;
+        bottom: -23px;
+    }
+}

@@ -1,0 +1,37 @@
+// [block]__[element]--[modifier]
+
+.column {
+    &__title {
+        color: var(--white);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        display: block;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        margin: 10px 0;
+        text-decoration: none;
+        color: var(--white);
+        font-weight: lighter;
+        width: fit-content;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

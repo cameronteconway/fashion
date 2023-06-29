@@ -9,16 +9,25 @@ import img5 from '../assets/square-dress-bw.jpg';
 import img6 from '../assets/square-face-bw.jpg';
 import img7 from '../assets/square-shoes-bw.jpg';
 
-const images = [img1, img2, img3, img4, img5, img6, img7];
+const images: string[] = [img1, img2, img3, img4, img5, img6, img7];
 
-import '../styles/Social.css';
+import '../styles/Social.scss';
 
-const Social = ({ data }) => {
-    const renderCarouselData = data.map((item, index) => {
+interface carouselData {
+    src: string;
+    alt: string;
+}
+
+interface Props {
+    data: carouselData[];
+}
+
+const Social = ({ data }: Props) => {
+    const renderCarouselData = data.map((item: carouselData, index: number) => {
         return (
             <div key={index}>
                 <img
-                    className={'carousel-image'}
+                    className={'social-container__carousel-image'}
                     src={images[index]}
                     alt={item.alt}
                 />
@@ -30,8 +39,8 @@ const Social = ({ data }) => {
         <section>
             <div className='wrapper'>
                 <div className='social-container'>
-                    <span>@moda</span>
-                    <div className='carousel-wrapper carousel-wrapper-mobile'>
+                    <span className='social-container__title'>@moda</span>
+                    <div className='social-container__carousel-wrapper social-container__carousel-wrapper--mobile'>
                         <Carousel
                             infiniteLoop
                             showStatus={false}
@@ -40,7 +49,7 @@ const Social = ({ data }) => {
                             {renderCarouselData}
                         </Carousel>
                     </div>
-                    <div className='carousel-wrapper carousel-wrapper-desktop'>
+                    <div className='social-container__carousel-wrapper social-container__carousel-wrapper--desktop'>
                         <Carousel
                             infiniteLoop
                             centerMode

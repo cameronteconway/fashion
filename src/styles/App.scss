@@ -19,34 +19,23 @@
 
 body {
     font-family: 'Baskervville', serif;
-    /* font-family: 'DM Serif Display', serif; */
     background-color: var(--white);
 }
 
 section {
     padding: 4rem 0;
-    /* height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .wrapper {
     max-width: 1200px;
     margin: auto;
     padding: 0 1rem;
-    /* overflow: auto; */
 }
 .header-wrapper {
     max-width: 1800px;
     margin: auto;
     padding: 0 1rem;
 }
-
-/* .section-stop-scroll {
-    scroll-snap-stop: always;
-    scroll-snap-align: end;
-} */
 
 @media only screen and (min-width: 600px) {
 }

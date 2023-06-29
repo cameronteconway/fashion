@@ -1,17 +1,16 @@
 import { getCurrentSeason } from '../utils/commonUtils';
 
 const getSeasonCollection = () => {
-    const currentSeason = getCurrentSeason();
-    const currentYear = new Date().getFullYear();
+    const currentSeason: string = getCurrentSeason();
 
     if (currentSeason === 'Spring') {
-        return `${currentYear} Summer collection`;
+        return `Summer Collection`;
     } else if (currentSeason === 'Summer') {
-        return `${currentYear} Autumn collection`;
+        return `Autumn Collection`;
     } else if (currentSeason === 'Autumn') {
-        return `${currentYear} Winter collection`;
+        return `Winter Collection`;
     } else {
-        return `${currentYear} Spring collection`;
+        return `Spring Collection`;
     }
 };
 
@@ -48,14 +47,14 @@ export const carouselData = [
 
 export const newsArticles = [
     {
-        title: 'Sustainable Fashion',
-        img: 'news-factory.jpg',
-        desc: 'Moda understands the challanges our planet faces, this is why we employ the best practices to achieve carbon neutrality.',
-    },
-    {
         title: getSeasonCollection(),
         img: 'news-catwalk.jpg',
         desc: `Our ${getSeasonCollection()} by Giana Bianchi and Emilia Esposito presents a sequence realities - reflections, refractions, observations.`,
+    },
+    {
+        title: 'Sustainable Fashion',
+        img: 'news-factory.jpg',
+        desc: 'Moda understands the challanges our planet faces, this is why we employ the best practices to achieve carbon neutrality.',
     },
     // {
     //     title: 'Mercedes-Benz x Moda',
@@ -76,7 +75,7 @@ const delivery = [
 ];
 
 export const footerContent = [
-    { 'Customer Service': customerService },
-    { About: about },
-    { Delivery: delivery },
+    { name: 'Customer Service', content: customerService },
+    { name: 'About', content: about },
+    { name: 'Delivery', content: delivery },
 ];

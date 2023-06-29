@@ -1,12 +1,13 @@
-import '../styles/Banner.css';
+import '../styles/Banner.scss';
 
 const Banner = () => {
     return (
-        <div className='banner-container'>
+        <div className='banner'>
             <span
+                className='banner__image'
                 // rel='preload'
                 // src={'../assets/banner-woman.jpg'}
-                alt='Woman in coat posing'
+                title='Woman in coat posing'
             />
         </div>
     );

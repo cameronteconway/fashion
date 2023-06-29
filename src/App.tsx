@@ -1,4 +1,3 @@
-import { createRoot } from 'react-dom/client';
 import Header from './components/Navigation/Header';
 import Banner from './components/Banner';
 import News from './components/News';
@@ -9,9 +8,9 @@ import Footer from './components/Footer';
 import { carouselData, newsArticles, footerContent } from './data/data';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import './styles/App.css';
+import './styles/App.scss';
 
-const App = () => {
+const App: React.FC = () => {
     return (
         <div>
             <Header />
@@ -26,4 +25,4 @@ const App = () => {
     );
 };
 
-createRoot(document.getElementById('root')).render(<App />);
+export default App;
