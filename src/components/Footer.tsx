@@ -1,23 +1,30 @@
 import FooterColumn from './FooterColumn';
+import SocialLink from './SocialLink';
 import { getYear } from '../utils/commonUtils';
 
 import '../styles/Footer.scss';
 
 interface FooterContent {
-    name: string;
+    title: string;
     content: string[];
 }
 
+interface SocialLinks {
+    id: string;
+}
+
 interface Props {
-    data: FooterContent[];
+    data: [FooterContent[], SocialLinks[]];
 }
 
 const Footer = ({ data }: Props) => {
-    const renderColumns: JSX.Element[] = data.map(
-        (column: FooterContent, index: number) => (
-            <FooterColumn columnData={column} key={index} />
-        )
-    );
+    const renderColumns: JSX.Element[] = data[0].map((column, index) => (
+        <FooterColumn data={column} key={index} />
+    ));
+
+    const renderSocialLinks: JSX.Element[] = data[1].map((link, index) => (
+        <SocialLink data={link} key={index} />
+    ));
 
     return (
         <footer className='footer-background'>
@@ -29,30 +36,7 @@ const Footer = ({ data }: Props) => {
                             Location: GB (£)
                         </span>
                         <div className='footer__social-links'>
-                            <a className='footer__social-link' href='/#'>
-                                <i className='bi bi-instagram'></i>
-                            </a>
-                            <a className='footer__social-link' href='/#'>
-                                <i className='bi bi-linkedin'></i>
-                            </a>
-                            <a className='footer__social-link' href='/#'>
-                                <i className='bi bi-snapchat'></i>
-                            </a>
-                            <a className='footer__social-link' href='/#'>
-                                <i className='bi bi-twitter'></i>
-                            </a>
-                            <a className='footer__social-link' href='/#'>
-                                <i className='bi bi-wechat'></i>
-                            </a>
-                            <a className='footer__social-link' href='/#'>
-                                <i className='bi bi-youtube'></i>
-                            </a>
-                            <a className='footer__social-link' href='/#'>
-                                <i className='bi bi-telegram'></i>
-                            </a>
-                            <a className='footer__social-link' href='/#'>
-                                <i className='bi bi-twitch'></i>
-                            </a>
+                            {renderSocialLinks}
                         </div>
                     </div>
                 </div>

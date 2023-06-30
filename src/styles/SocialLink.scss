@@ -1,0 +1,21 @@
+.social-link {
+    font-size: 19px;
+    color: var(--white);
+    width: max-content;
+    &:hover,
+    &:focus {
+        color: var(--special);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

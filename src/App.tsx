@@ -1,11 +1,16 @@
-import Header from './components/Navigation/Header';
+import Header from './components/Header';
 import Banner from './components/Banner';
 import News from './components/News';
 import Social from './components/Social';
 import SignUp from './components/SignUp';
 import Footer from './components/Footer';
 
-import { carouselData, newsArticles, footerContent } from './data/data';
+import {
+    carouselData,
+    newsArticles,
+    footerContent,
+    socialLinks,
+} from './data/data';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './styles/App.scss';
@@ -20,7 +25,7 @@ const App: React.FC = () => {
                 <Social data={carouselData} />
                 <SignUp />
             </main>
-            <Footer data={footerContent} />
+            <Footer data={[footerContent, socialLinks]} />
         </div>
     );
 };

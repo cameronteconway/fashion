@@ -1,6 +1,6 @@
-import { getCurrentSeason } from '../../utils/commonUtils';
+import { getCurrentSeason } from '../utils/commonUtils';
 
-import '../../styles/Header.scss';
+import '../styles/Header.scss';
 
 const Header = () => {
     return (
