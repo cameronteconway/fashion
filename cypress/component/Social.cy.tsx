@@ -46,7 +46,7 @@ describe('<Social />', () => {
             .find('li:nth-child(1)')
             .should('have.class', 'selected');
     });
-    it(`Correct slider shown: ${test[0].index + 1}`, () => {
+    it(`Correct random slider shown: slide ${test[0].index + 1}`, () => {
         cy.mount(<Social data={carouselData} />);
         cy.get(`ul.control-dots li`).eq(test[0].index).click({
             force: true,
@@ -55,7 +55,7 @@ describe('<Social />', () => {
             .find('img')
             .should('have.attr', 'alt', test[0].element.alt);
     });
-    it(`Correct slider shown: ${test[1].index + 1}`, () => {
+    it(`Correct random slider shown: slide ${test[1].index + 1}`, () => {
         cy.mount(<Social data={carouselData} />);
         cy.get(`ul.control-dots li`).eq(test[1].index).click({
             force: true,
@@ -64,7 +64,7 @@ describe('<Social />', () => {
             .find('img')
             .should('have.attr', 'alt', test[1].element.alt);
     });
-    it(`Correct slider shown: ${test[2].index + 1}`, () => {
+    it(`Correct random slider shown: slide ${test[2].index + 1}`, () => {
         cy.mount(<Social data={carouselData} />);
         cy.get(`ul.control-dots li`).eq(test[2].index).click({
             force: true,
