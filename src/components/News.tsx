@@ -10,7 +10,7 @@ import '../styles/News.scss';
 
 interface newsArticles {
     title: string;
-    img: string;
+    alt: string;
     desc: string;
 }
 
@@ -19,15 +19,16 @@ interface Props {
 }
 
 const News = ({ data }: Props) => {
-    const renderNews = data.map((articles: newsArticles, index: number) => (
+    const renderNews = data.map((article: newsArticles, index: number) => (
         <article className='article' key={index}>
             <LazyLoadImage
                 className='article__img'
                 src={images[index]}
+                alt={article.alt}
                 loading='lazy'
             />
             <div>
-                <span className='article__title'>{articles.title}</span>
+                <span className='article__title'>{article.title}</span>
             </div>
         </article>
     ));

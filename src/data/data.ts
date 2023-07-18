@@ -54,19 +54,19 @@ export const carouselData: Carousel[] = [
 // News
 interface News {
     title: string;
-    img: string;
+    alt: string;
     desc: string;
 }
 
 export const newsArticles: News[] = [
     {
         title: getSeasonCollection(),
-        img: 'news-catwalk.jpg',
+        alt: 'An ariel view of a catwalk.',
         desc: `Our ${getSeasonCollection()} by Giana Bianchi and Emilia Esposito presents a sequence realities - reflections, refractions, observations.`,
     },
     {
         title: 'Sustainable Fashion',
-        img: 'news-factory.jpg',
+        alt: 'A factory room full of materials used to make clothes.',
         desc: 'Moda understands the challanges our planet faces, this is why we employ the best practices to achieve carbon neutrality.',
     },
 ];
@@ -101,31 +101,40 @@ export const footerContent: Footer[] = [
 
 interface SocialLink {
     id: string;
+    text: string;
 }
 
 export const socialLinks: SocialLink[] = [
     {
         id: 'instagram',
+        text: 'Link to our Instagram',
     },
     {
         id: 'linkedin',
+        text: 'Link to our LinkedIn',
     },
     {
         id: 'snapchat',
+        text: 'Link to our Snapchat',
     },
     {
         id: 'twitter',
+        text: 'Link to our Twitter',
     },
     {
         id: 'wechat',
+        text: 'Link to our WeChat',
     },
     {
         id: 'youtube',
+        text: 'Link to our YouTube',
     },
     {
         id: 'telegram',
+        text: 'Link to our Telegram',
     },
     {
         id: 'twitch',
+        text: 'Link to our Twitch',
     },
 ];

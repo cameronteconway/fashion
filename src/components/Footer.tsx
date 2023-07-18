@@ -11,6 +11,7 @@ interface FooterContent {
 
 interface SocialLinks {
     id: string;
+    text: string;
 }
 
 interface Props {
