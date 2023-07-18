@@ -1,5 +1,6 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import img1 from '../assets/square-necklace-bw.jpg';
 import img2 from '../assets/square-bag-bw.jpg';
@@ -26,10 +27,11 @@ const Social = ({ data }: Props) => {
     const renderCarouselData = data.map((item: carouselData, index: number) => {
         return (
             <div key={index}>
-                <img
+                <LazyLoadImage
                     className={'social-container__carousel-image'}
                     src={images[index]}
                     alt={item.alt}
+                    loading='lazy'
                 />
             </div>
         );
