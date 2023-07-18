@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import img1 from '../assets/news-catwalk.jpg';
 import img2 from '../assets/news-factory.jpg';
 
@@ -19,7 +21,11 @@ interface Props {
 const News = ({ data }: Props) => {
     const renderNews = data.map((articles: newsArticles, index: number) => (
         <article className='article' key={index}>
-            <img className='article__img' src={images[index]} />
+            <LazyLoadImage
+                className='article__img'
+                src={images[index]}
+                loading='lazy'
+            />
             <div>
                 <span className='article__title'>{articles.title}</span>
             </div>

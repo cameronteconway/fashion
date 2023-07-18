@@ -33,22 +33,22 @@ header {
             top: 13.5px;
             background-color: transparent;
         }
-        &:checked + .header__hamburger-label > .hamburger > .hamburger__bar1 {
+        &:checked + .header__hamburger-label > .hamburger > .hamburger__bar2 {
             left: 0px;
             width: 30px;
             transform: rotate(45deg);
             background-color: var(--dark-text);
         }
-        &:checked + .header__hamburger-label > .hamburger > .hamburger__bar1 {
+        &:checked + .header__hamburger-label > .hamburger > .hamburger__bar3 {
             left: 0;
             width: 30px;
             transform: rotate(-45deg);
             background-color: var(--dark-text);
         }
-        &:checked + .header__hamburger-label > .hamburger > .hamburger__bar1 {
+        &:checked + .header__hamburger-label > .hamburger > .hamburger__bar4 {
             background-color: transparent;
         }
-        &:checked + .header__hamburger-label > .hamburger > .hamburger__bar1 {
+        &:checked + .header__hamburger-label > .hamburger > .hamburger__bar5 {
             bottom: 13.5px;
             background-color: transparent;
         }
